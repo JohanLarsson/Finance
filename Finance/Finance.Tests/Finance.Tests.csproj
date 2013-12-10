@@ -45,12 +45,19 @@
     <Compile Include="IndicatorsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reference.cs" />
+    <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Links.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Finance.csproj">
+      <Project>{2B927305-C0E3-44D5-9F88-26B37CA222BB}</Project>
+      <Name>Finance</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -18,6 +18,6 @@ namespace Finance.Tests
             {
                 yield return list.Skip(i).Take(period).Average();
             }
-        
+        }
     }
 }

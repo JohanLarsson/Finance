@@ -8,7 +8,7 @@ namespace Finance
 {
     public static class Indicators
     {
-        public static IEnumerable<double> MovingAverageTravis(double[] list, int period)
+        public static IEnumerable<double> MovingAverage(double[] list, int period)
         {
             int count = list.Count();
             int total = period < count ? period : count;
@@ -54,6 +54,20 @@ namespace Finance
                 current = current * decay + d * (1 - decay);
                 yield return current;
             }
+        }
+
+        public static IEnumerable<double> Ema(double[] list, int period)
+        {
+            var decay = 2.0/(period + 1);
+            double ema = list.Take(period).Average();
+            yield return ema;
+            var count = list.Count();
+            for (int i = period+1; i < count; i++)
+            {
+                ema = (list[i] - ema)*decay + ema;
+                yield return ema;
+            }
+            double current = list.First();
         }
     }
 }
