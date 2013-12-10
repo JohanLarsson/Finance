@@ -40,5 +40,20 @@ namespace Finance
             return ret;
         }
 
+        /// <summary>
+        /// Kendall's
+        /// </summary>
+        /// <param name="list"></param>
+        /// <param name="decay"></param>
+        /// <returns></returns>
+        public static IEnumerable<double> Ema(IEnumerable<double> list, double decay)
+        {
+            double current = list.First();
+            foreach (double d in list)
+            {
+                current = current * decay + d * (1 - decay);
+                yield return current;
+            }
+        }
     }
 }
