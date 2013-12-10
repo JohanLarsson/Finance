@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finance.Indicators", "Finance.Indicators\Finance.Indicators.csproj", "{79A861B2-1A75-4DB2-9BB8-C702C569AA66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finance.Indicators.Tests", "Finance.Indicators\Finance.Indicators.Tests\Finance.Indicators.Tests.csproj", "{C33901F7-6EFB-4654-AE2D-AD0998118382}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79A861B2-1A75-4DB2-9BB8-C702C569AA66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79A861B2-1A75-4DB2-9BB8-C702C569AA66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79A861B2-1A75-4DB2-9BB8-C702C569AA66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79A861B2-1A75-4DB2-9BB8-C702C569AA66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C33901F7-6EFB-4654-AE2D-AD0998118382}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C33901F7-6EFB-4654-AE2D-AD0998118382}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C33901F7-6EFB-4654-AE2D-AD0998118382}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C33901F7-6EFB-4654-AE2D-AD0998118382}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
