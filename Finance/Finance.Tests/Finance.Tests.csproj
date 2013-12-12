@@ -54,10 +54,17 @@
     <Content Include="Links.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\FSharp.Finance\FSharp.Finance.fsproj">
+      <Project>{cda0846a-3b26-41dd-914c-74dd01481892}</Project>
+      <Name>FSharp.Finance</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Finance.csproj">
       <Project>{2B927305-C0E3-44D5-9F88-26B37CA222BB}</Project>
       <Name>Finance</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

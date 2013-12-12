@@ -67,7 +67,6 @@ namespace Finance
                 ema = (list[i] - ema)*decay + ema;
                 yield return ema;
             }
-            double current = list.First();
         }
     }
 }

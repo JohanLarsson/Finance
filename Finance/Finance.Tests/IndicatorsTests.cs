@@ -9,9 +9,13 @@ namespace Finance.Tests
         public void MovingAverageTest()
         {
             var doubles = Utils.RandomDoubles(500).ToArray();
-            var expected = Reference.MovingAverage(doubles, 10).ToArray();
-            var actual = Indicators.MovingAverage(doubles, 10).ToArray();
+            var period = 10;
+            var expected = Reference.MovingAverage(doubles, period).ToArray();
+            var actual = Indicators.MovingAverage(doubles, period).ToArray();
             Utils.AreEqual(expected, actual, 0.001);
+
+            var result = FSharp.Finance.something.ma(doubles, period).ToArray();
+            Utils.AreEqual(expected, result, 0.001);
         }
     }
 }
